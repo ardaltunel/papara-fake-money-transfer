@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papara Sahte Para Transferi - Arda Altunel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="transfer-container">
+        <div class="date" id="date">1 Ocak 2024</div>
+        <div class="transfer-details">
+            <div class="avatar"> 
+                <img src="svg/default.svg" alt="Avatar" id="avatar-img"> <!-- Avatar resmini buraya ekleyebilirsiniz -->
+            </div>
+            <div class="info">
+                <div class="name" id="name">A*** A***</div>
+                <div class="description">Para Transferi</div>
+            </div>
+            <div class="amount-time">
+                <div class="amount" id="amount">₺10,00</div>
+                <div class="time" id="time">00:00</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="input-container">
+        <input type="date" id="date-input">
+        <input type="text" id="name-input" placeholder="İsim: A*** A***">
+        <input type="number" id="amount-input" placeholder="Tutar: 10">
+        <input type="text" id="time-input" placeholder="Saat: 00:00">
+        <input type="file" id="avatar-input" accept="image/*">
+        <button onclick="updateTransferDetails()">Güncelle</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
