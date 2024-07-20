@@ -5,7 +5,6 @@ function updateTransferDetails() {
     const nameInput = document.getElementById('name-input').value;
     const amountInput = document.getElementById('amount-input').value;
     const timeInput = document.getElementById('time-input').value;
-    const avatarInput = document.getElementById('avatar-input').files[0];
 
     if (dateInput) {
         const date = new Date(dateInput);
@@ -24,16 +23,12 @@ function updateTransferDetails() {
     if (timeInput) {
         document.getElementById('time').innerText = timeInput;
     }
-
-    if (avatarInput) {
-        const reader = new FileReader();
-        reader.onload = function(e) {
-            document.getElementById('avatar-img').src = e.target.result;
-        }
-        reader.readAsDataURL(avatarInput);
-    }
 }
 
 function changeDescription(newText) {
     document.getElementById('description').innerText = newText;
+}
+
+function changeAvatar(imagePath) {
+    document.getElementById('avatar-img').src = imagePath;
 }
