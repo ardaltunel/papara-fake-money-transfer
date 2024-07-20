@@ -15,7 +15,7 @@
             </div>
             <div class="info">
                 <div class="name" id="name">A*** A***</div>
-                <div class="description">Para Transferi</div>
+                <div class="description" id="description">Para Transferi</div>
             </div>
             <div class="amount-time">
                 <div class="amount" id="amount">₺10,00</div>
@@ -31,6 +31,12 @@
         <input type="text" id="time-input" placeholder="Saat: 00:00">
         <input type="file" id="avatar-input" accept="image/*">
         <button onclick="updateTransferDetails()">Güncelle</button>
+    </div>
+    
+    <div class="button-container">
+        <button onclick="changeDescription('Para Transferi')">Para Transferi</button>
+        <button onclick="changeDescription('FAST ile Transfer')">FAST ile Transfer</button>
+        <button onclick="changeDescription('Banka Transferi')">Banka Transferi</button>
     </div>
 
     <script src="script.js"></script>
