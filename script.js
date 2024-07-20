@@ -1,5 +1,3 @@
-// script.js
-
 document.getElementById('date').addEventListener('click', function() {
     document.getElementById('dateModal').style.display = "block";
 });
