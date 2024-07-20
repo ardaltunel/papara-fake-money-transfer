@@ -160,13 +160,27 @@ button {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 300px;
+    max-width: 550px;
     box-sizing: border-box;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 .button-container button {
     width: 30%;
+}
+
+.avatar-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 550px;
+    box-sizing: border-box;
+    margin-top: 2rem;
+}
+
+.avatar-buttons button {
+    width: 16%;
+    margin: 2px;
 }
 
 @media (max-width: 343px) {
