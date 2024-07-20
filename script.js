@@ -1,3 +1,5 @@
+// script.js
+
 function updateTransferDetails() {
     const dateInput = document.getElementById('date-input').value;
     const nameInput = document.getElementById('name-input').value;
@@ -30,4 +32,8 @@ function updateTransferDetails() {
         }
         reader.readAsDataURL(avatarInput);
     }
+}
+
+function changeDescription(newText) {
+    document.getElementById('description').innerText = newText;
 }
