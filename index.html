@@ -29,14 +29,22 @@
         <input type="text" id="name-input" placeholder="İsim: A*** A***">
         <input type="number" id="amount-input" placeholder="Tutar: 10">
         <input type="text" id="time-input" placeholder="Saat: 00:00">
-        <input type="file" id="avatar-input" accept="image/*">
         <button onclick="updateTransferDetails()">Güncelle</button>
     </div>
     
     <div class="button-container">
         <button onclick="changeDescription('Para Transferi')">Para Transferi</button>
         <button onclick="changeDescription('FAST ile Transfer')">FAST ile Transfer</button>
-        <button onclick="changeDescription('Banka Transferi')">Banka Transferi</button>
+        <button onclick="changeDescription('')">Temizle</button>
+    </div>
+
+    <div class="avatar-buttons">
+        <button onclick="changeAvatar('svg/akbank.svg')">Akbank</button>
+        <button onclick="changeAvatar('svg/ziraatbankasi.svg')">Ziraat Bankası</button>
+        <button onclick="changeAvatar('svg/isbankasi.svg')">İş Bankası</button>
+        <button onclick="changeAvatar('svg/yapikredi.svg')">Yapı Kredi</button>
+        <button onclick="changeAvatar('svg/qnbfinans.svg')">QNB Finansbank</button>
+        <button onclick="changeAvatar('svg/garantibankasi.svg')">Garanti Bankası</button>
     </div>
 
     <script src="script.js"></script>
